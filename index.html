@@ -3,19 +3,21 @@
       <title>Simple Interest Calculator</title>
       <script type="text/javascript" src="script.js"></script>
 
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-      <h1 align="center">Simple Interest Calculator</h1>
-      <div>
-        Amount: <input id="principal_bal"><br/>
-        Rate: <input id="rate_of_interent"><br/>
-        No. of Years: <input id="no_of_years"><br/>
+      <div class="container">
+        <form>
+          <h1>Simple Interest Calculator</h1>
+          Amount: <input type="number" id="principal_bal"><br/>
+          Rate: <input type="number" id="rate_of_interest"><br/>
+          No. of Years: <input type="number" id="no_of_years"><br/>
 
-        <button onclick="calculate_simple_interest()">Calculate</button>
+          <input type="button" onclick="calculate_simple_interest()" value="Calculate">
 
-        <p id="result"></p>
+          <p id="result"></p>
+        </form>
       </div>
     </body>
 </html>
