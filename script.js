@@ -4,7 +4,7 @@ var output = document.getElementById("rate_val");
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
-  output.innerHTML = this.value;
+  output.innerHTML = this.value + "%";
 }
 
 function calculate_simple_interest() {
