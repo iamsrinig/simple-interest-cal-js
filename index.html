@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
       <title>Simple Interest Calculator</title>
@@ -5,19 +6,38 @@
     </head>
 
     <body>
-      <div class="container">
-        <form>
-          <h1>Simple Interest Calculator</h1>
-          Amount: <input type="number" id="principal_bal"><br/>
-          Rate: <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-          <p>Value: <span id="demo"></span></p>
-          No. of Years: <input type="number" id="no_of_years"><br/>
+      <header>
+        <h2>Simple Interest Calculator</h2>
+      </header>
 
-          <input type="button" onclick="calculate_simple_interest()" value="Calculate">
+      <section>
+        <article>
+          <div class="maindiv">
+            <form>
+              Amount: <input type="number" id="principal_bal"><br><br>
+              Interest Rate: <input type="range" min="1" max="20" value="10.25" step="0.25" class="slider" id="myRange">
+              Value: <span id="rate_val">10.25%</span><br><br>
+              No. of Years:
+              <select id="no_of_years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <!-- fill in the rest of the values-->
+                </select><br><br>
 
-          <p id="result"></p>
-        </form>
-      </div>
+              <input type="button" onclick="calculate_simple_interest()" value="Calculate"><br/>
+
+              <p id="results"></p>
+            </form>
+          </div>
+        </article>
+      </section>
+      <footer>
+        &#169; This Calculator belongs to Srinivas
+      </footer>
       <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
