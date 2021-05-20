@@ -8,9 +8,11 @@ slider.oninput = function() {
 }
 
 function calculate_simple_interest() {
-  p = document.getElementById("principal_bal").value;
-  n = document.getElementById("no_of_years").value;
-  r = document.getElementById("myRange").value;
-  result = document.getElementById("results");
-  result.innerHTML = "The interest is " + (p*n*r/100);
+  var p = document.getElementById("principal_bal").value;
+  var n = document.getElementById("no_of_years").value;
+  var r = document.getElementById("myRange").value;
+  var y = new Date().getFullYear()+parseInt(n);
+  var result = document.getElementById("results");
+  var total = (p*n*r/100);
+  result.innerHTML = `If you deposit ${p}, <br> at an interest rate of ${r}, <br> you will receive an amount of ${total}, in the year ${y}`
 }

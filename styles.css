@@ -19,7 +19,7 @@ article {
   width: 50%;
   /* background-color: #f1f1f1; */
 	margin: auto;
-  height: 300px; /* only for demonstration, should be removed */
+  height: auto; /* only for demonstration, should be removed */
 }
 
 section::after {
