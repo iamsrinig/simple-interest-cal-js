@@ -9,6 +9,11 @@ slider.oninput = function() {
 
 function calculate_simple_interest() {
   var p = document.getElementById("principal_bal").value;
+  console.log(p)
+  if(p === 0 || p === null || p === "") {
+    document.getElementById("principal_bal").focus();
+    return
+  }
   var n = document.getElementById("no_of_years").value;
   var r = document.getElementById("myRange").value;
   var y = new Date().getFullYear()+parseInt(n);
